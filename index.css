@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	font-family: cursive;
+	font-size: 18px;
+}
+
+body {
+	background-color: #232020;
+	overflow-x: hidden;
+}
+
+.container {
+	margin: 0 200px;
+}
+
+header {
+	color: #ff7315;
+	text-align: center;
+	font-size: 5rem;
+	margin: 50px 0 0;
+}
+
+#formulaire {
+	background-color: rgb(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+	border: solid black;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	padding: 40px;
+}
+
+#formulaire div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.btn {
+	display: block;
+	height: 40px;
+	border-radius: 10px;
+}
+
+input {
+	padding: 15px;
+	width: 80%;
+	border: 2px solid gray;
+}
+
+button[type="submit"] {
+	width: 20%;
+	color: white;
+	font-weight: 500;
+	cursor: pointer;
+	background-color: #007bff;
+	transition: background-color 0.2s ease;
+}
+
+button:hover {
+	background-color: #0169d8;
+}
+
+small {
+	color: crimson;
+}
+
+#instructions {
+	color: white;
+}
+
+.instruction {
+	padding: 15px;
+	margin: 10px 0;
+}
+
+.plus,
+#no {
+	background-color: #f67280;
+}
+
+.moins {
+	background-color: #ffa372;
+}
+
+.fini,
+#yes {
+	background-color: #0c9463;
+}
+
+.modal {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: none;
+	place-items: center;
+	background-color: rgb(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+}
+
+.content {
+	background-color: rgb(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	border: solid black;
+	border-radius: 10px;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	color: white;
+	padding: 20px;
+}
+
+.content div {
+	display: flex;
+	width: 100%;
+	gap: 30px;
+}
+
+.content div button {
+	width: 100%;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.content div button:first-child:hover {
+	transform: scale(0.8);
+}
+
+.content div button:last-child:hover {
+	transform: scale(1.2);
+}
+
+@media all and (max-width: 800px) {
+	header {
+		font-size: 3rem;
+		margin: 10px 0;
+	}
+
+	input {
+		width: 100%;
+	} 
+
+	button[type="submit"] {
+		width: 60%;
+	}
+
+	.container {
+		margin: 0 30px;
+	}
+
+	#formulaire {
+		padding: 10px;
+	}
+
+	#formulaire div {
+		flex-wrap: wrap;
+	}
+
+	button {
+		width: 50%;
+	}
+}
