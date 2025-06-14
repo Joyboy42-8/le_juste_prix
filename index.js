@@ -23,8 +23,8 @@ function rejouer() {
 		modal.style.display = "none";
 	});
 	yes.addEventListener("click", () => {
-        input.disabled = false;
-        modal.style.display = "none";
+		input.disabled = false;
+		modal.style.display = "none";
 		instructions.innerHTML = "";
 	});
 }
