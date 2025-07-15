@@ -26,6 +26,7 @@ function rejouer() {
 		input.disabled = false;
 		modal.style.display = "none";
 		instructions.innerHTML = "";
+		nombreAleatoire = Math.floor(Math.random() * 1001);
 	});
 }
 
